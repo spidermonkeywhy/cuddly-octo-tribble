@@ -1,228 +1,213 @@
 // ============================================
-// MIRUMI MEMECOIN - SITE CONSTANTS
+// E-COMMERCE SITE CONSTANTS
 // ============================================
 // EDIT HERE: Update these values to customize the site
 // ============================================
 
 export const SITE_CONFIG = {
-  name: 'MIRUMI',
-  ticker: '$MIRUMI',
-  chain: 'Solana',
-  tagline: 'The Labubu of 2026',
-  description: 'MIRUMI is a community-driven memecoin bringing collectible culture to Solana. Join the fluffiest community in crypto.',
-  url: 'https://mirumi.io',
-}
-
-export const TOKEN_INFO = {
-  contractAddress: '7MiRuMiXxYzABC123DefGHI456JkLMnoPQR789StuVWxYz',
-  totalSupply: '1,000,000,000',
-  circulatingSupply: '850,000,000',
-  burned: '150,000,000',
-  lpLocked: true,
-  mintRevoked: true,
-  freezeRevoked: true,
-  launchDate: 'January 2026',
-}
-
-export const SOCIAL_LINKS = {
-  twitter: 'https://x.com/mirumi',
-  telegram: 'https://t.me/mirumi',
-  discord: 'https://discord.gg/mirumi',
-  dex: 'https://raydium.io/swap/?outputMint=mirumi',
-  explorer: 'https://solscan.io/token/7MiRuMiXxYzABC123DefGHI456JkLMnoPQR789StuVWxYz',
+  name: 'ProductName',
+  tagline: 'The future of productivity',
+  description: 'Discover the revolutionary product that transforms how you work. Simple, powerful, and designed for modern life.',
+  url: 'https://example.com',
 }
 
 export const NAV_LINKS = [
-  { label: 'Story', href: '#story' },
-  { label: 'Collect', href: '#collect' },
-  { label: 'Social Proof', href: '#social-proof' },
-  { label: 'Token', href: '#token' },
-  { label: 'Roadmap', href: '#roadmap' },
-  { label: 'Community', href: '#community' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Learn More', href: '/learn-more' },
+  { label: 'Contact', href: '/contact' },
 ]
 
-export const STATS = [
-  { label: 'Holders', value: '12,847' },
-  { label: 'Community', value: '28K+' },
-  { label: 'Drops Shipped', value: '3' },
-  { label: 'Daily Memes', value: '100+' },
-]
-
-export const PILLS = [
-  'Community-first',
-  'Collectible IP energy',
-  'Meme-native, brand-led',
-  'Designed for 2026 culture',
-  'Fair Launch',
-  'LP Locked',
-]
-
-export const STORY_CONTENT = {
-  headline: 'A new kind of collectible',
-  paragraphs: [
-    'In a world oversaturated with generic tokens and empty promises, MIRUMI emerged as something different. Not just another memecoin, but a cultural movement built around the most huggable character in crypto.',
-    'We saw how Labubu captured hearts worldwide with its quirky charm and collectible appeal. MIRUMI channels that same magic into the digital realm, creating a community where art, culture, and crypto intersect.',
-    'This is not about pumps or dumps. It is about building something that makes people smile, something worth collecting, something worth being part of.',
-  ],
-  ethos: [
-    { icon: 'heart', text: 'Community-owned, community-driven' },
-    { icon: 'sparkle', text: 'Fair launch, no presale, no insiders' },
-    { icon: 'shield', text: 'Liquidity locked, mint revoked' },
-    { icon: 'star', text: 'Collectible-first mentality' },
-    { icon: 'rocket', text: 'Built for long-term believers' },
-  ],
-  loreCard: {
-    title: 'The Legend of MIRUMI',
-    text: 'Born from stardust and internet dreams, MIRUMI wandered the blockchain seeking kindred spirits. They say if you hold MIRUMI close, it brings good fortune and even better vibes. Some call it a token. We call it family.',
-  },
+export const SOCIAL_LINKS = {
+  twitter: 'https://twitter.com/placeholder',
+  instagram: 'https://instagram.com/placeholder',
+  linkedin: 'https://linkedin.com/company/placeholder',
+  email: 'hello@example.com',
 }
 
-export const COLLECT_CARDS = [
+export const HERO_CONTENT = {
+  headline: 'Transform Your Workflow',
+  subheadline: 'The all-in-one solution that helps you work smarter, not harder.',
+  cta: 'Shop Now',
+  secondaryCta: 'Learn More',
+}
+
+export const STATS = [
+  { label: 'Happy Customers', value: '10,000+' },
+  { label: 'Countries', value: '50+' },
+  { label: 'Reviews', value: '4.9/5' },
+  { label: 'Support', value: '24/7' },
+]
+
+export const PRODUCTS = [
   {
-    icon: 'search',
-    title: 'Discover',
-    description: 'Explore the lore, catch exclusive drops, and be part of unforgettable moments in MIRUMI history.',
+    id: 1,
+    name: 'Starter Pack',
+    price: '$49',
+    description: 'Perfect for individuals getting started.',
+    features: ['Core features', 'Email support', '1 user'],
+    featured: false,
   },
   {
-    icon: 'collection',
-    title: 'Collect',
-    description: 'Earn badges, unlock community artifacts, and build your collection of MIRUMI memorabilia.',
+    id: 2,
+    name: 'Pro Bundle',
+    price: '$99',
+    description: 'Best value for professionals.',
+    features: ['All features', 'Priority support', '5 users', 'Analytics'],
+    featured: true,
+  },
+  {
+    id: 3,
+    name: 'Enterprise',
+    price: '$199',
+    description: 'For teams that need more.',
+    features: ['Everything in Pro', 'Unlimited users', 'Custom integrations', 'Dedicated support'],
+    featured: false,
+  },
+]
+
+export const BENEFITS = [
+  {
+    icon: 'lightning',
+    title: 'Lightning Fast',
+    description: 'Experience unmatched speed and performance that keeps you ahead of the curve.',
+  },
+  {
+    icon: 'shield',
+    title: 'Secure & Reliable',
+    description: 'Built with enterprise-grade security to keep your data safe at all times.',
   },
   {
     icon: 'sparkle',
-    title: 'Flex',
-    description: 'Show off your MIRUMI identity. Profile aesthetics, culture signals, and pure collector energy.',
+    title: 'Easy to Use',
+    description: 'Intuitive design that requires no learning curve. Start using it right away.',
+  },
+  {
+    icon: 'heart',
+    title: 'Customer Focused',
+    description: 'We listen to our customers and continuously improve based on your feedback.',
+  },
+]
+
+export const HOW_IT_WORKS = [
+  {
+    step: 1,
+    title: 'Sign Up',
+    description: 'Create your account in less than 30 seconds. No credit card required.',
+  },
+  {
+    step: 2,
+    title: 'Set Up',
+    description: 'Follow our simple setup wizard to configure your preferences.',
+  },
+  {
+    step: 3,
+    title: 'Get Started',
+    description: 'Start using the product immediately and see results from day one.',
+  },
+  {
+    step: 4,
+    title: 'Grow',
+    description: 'Scale effortlessly as your needs evolve. We grow with you.',
   },
 ]
 
 export const TESTIMONIALS = [
   {
-    name: 'Sarah K.',
-    role: 'Collector',
-    text: 'MIRUMI is the first crypto project that actually feels like joining a family. The community vibes are immaculate.',
-    avatar: 'SK',
-    featured: true,
+    name: 'Sarah Johnson',
+    role: 'Product Manager',
+    company: 'TechCorp',
+    text: 'This product has completely transformed how our team works. We\'ve seen a 40% increase in productivity.',
+    avatar: 'SJ',
   },
   {
-    name: 'Alex Chen',
+    name: 'Michael Chen',
+    role: 'Founder',
+    company: 'StartupXYZ',
+    text: 'The best investment we\'ve made for our business. Simple, powerful, and reliable.',
+    avatar: 'MC',
+  },
+  {
+    name: 'Emily Davis',
     role: 'Designer',
-    text: 'The aesthetic direction is chef\'s kiss. Finally a memecoin that understands brand.',
-    avatar: 'AC',
-  },
-  {
-    name: 'Crypto Maya',
-    role: 'Community Mod',
-    text: 'Been in crypto since 2017. This community is different. People actually care about each other.',
-    avatar: 'CM',
-  },
-  {
-    name: 'Jordan R.',
-    role: 'Early Holder',
-    text: 'Came for the cute character, stayed for the incredible community. No regrets.',
-    avatar: 'JR',
-  },
-  {
-    name: 'NFT Whisperer',
-    role: 'Collector',
-    text: 'MIRUMI understands that memecoins are about culture, not just charts. That\'s rare.',
-    avatar: 'NW',
-  },
-  {
-    name: 'Dev Luna',
-    role: 'Builder',
-    text: 'The transparency and community focus reminds me why I got into crypto in the first place.',
-    avatar: 'DL',
-  },
-  {
-    name: 'Pixel Pete',
-    role: 'Artist',
-    text: 'Contributing art to MIRUMI has been a joy. They actually value creativity.',
-    avatar: 'PP',
-  },
-  {
-    name: 'Solana Sam',
-    role: 'Trader',
-    text: 'Strong fundamentals, stronger community. MIRUMI is built different.',
-    avatar: 'SS',
+    company: 'Creative Studio',
+    text: 'Finally a tool that understands what professionals need. Highly recommend!',
+    avatar: 'ED',
   },
 ]
 
-export const HOW_TO_BUY = [
+export const FAQ = [
   {
-    step: 1,
-    title: 'Get a Wallet',
-    description: 'Download Phantom or Solflare wallet and create a new wallet.',
+    question: 'How do I get started?',
+    answer: 'Simply click the "Shop Now" button and follow the checkout process. You\'ll receive instant access after purchase.',
   },
   {
-    step: 2,
-    title: 'Add SOL',
-    description: 'Buy SOL from an exchange and send it to your wallet address.',
+    question: 'Is there a free trial?',
+    answer: 'Yes! We offer a 14-day free trial with full access to all features. No credit card required.',
   },
   {
-    step: 3,
-    title: 'Connect to DEX',
-    description: 'Visit Raydium.io and connect your wallet.',
+    question: 'What payment methods do you accept?',
+    answer: 'We accept all major credit cards, PayPal, and bank transfers for enterprise customers.',
   },
   {
-    step: 4,
-    title: 'Swap for MIRUMI',
-    description: 'Paste the contract address and swap your SOL for MIRUMI.',
+    question: 'Can I cancel anytime?',
+    answer: 'Absolutely. You can cancel your subscription at any time with no questions asked.',
   },
   {
-    step: 5,
-    title: 'Join the Community',
-    description: 'Welcome to the family! Join our socials and say hello.',
+    question: 'Do you offer refunds?',
+    answer: 'Yes, we offer a 30-day money-back guarantee if you\'re not satisfied with the product.',
   },
 ]
 
-export const ROADMAP = [
+export const ABOUT_CONTENT = {
+  headline: 'Our Story',
+  mission: 'We believe everyone deserves tools that make their work easier and more enjoyable.',
+  paragraphs: [
+    'Founded in 2024, we set out with a simple mission: create products that people actually love to use. We were tired of complicated tools that promised everything but delivered frustration.',
+    'Our team of passionate designers and engineers work tirelessly to craft solutions that are both powerful and delightfully simple. Every feature is carefully considered, every interaction thoughtfully designed.',
+    'Today, we serve thousands of customers worldwide, but we haven\'t lost sight of why we started. We\'re still obsessed with making your work life better, one feature at a time.',
+  ],
+  values: [
+    { title: 'Simplicity', description: 'We remove complexity, not add it.' },
+    { title: 'Quality', description: 'We never ship anything we wouldn\'t use ourselves.' },
+    { title: 'Customer First', description: 'Your success is our success.' },
+    { title: 'Transparency', description: 'We\'re honest about what we can and can\'t do.' },
+  ],
+}
+
+export const CONTACT_INFO = {
+  email: 'hello@example.com',
+  phone: '+1 (555) 123-4567',
+  address: '123 Innovation Street, Tech City, TC 12345',
+  hours: 'Monday - Friday, 9am - 6pm EST',
+}
+
+export const FOOTER_LINKS = [
   {
-    phase: 'Phase 1',
-    title: 'Genesis',
-    status: 'completed' as const,
-    items: [
-      'Fair launch on Raydium',
-      'Community building begins',
-      'Website and socials launch',
-      'First 1,000 holders milestone',
+    title: 'Product',
+    links: [
+      { label: 'Features', href: '/learn-more' },
+      { label: 'Pricing', href: '/#pricing' },
+      { label: 'FAQ', href: '/learn-more#faq' },
     ],
   },
   {
-    phase: 'Phase 2',
-    title: 'Growth',
-    status: 'current' as const,
-    items: [
-      'Community events and raids',
-      'Partnerships exploration',
-      'Holder rewards program',
-      'Content creator program',
+    title: 'Company',
+    links: [
+      { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' },
+      { label: 'Careers', href: '#' },
     ],
   },
   {
-    phase: 'Phase 3',
-    title: 'Expansion',
-    status: 'upcoming' as const,
-    items: [
-      'Collectible drops (exploring)',
-      'Merch store launch',
-      'CEX listing applications',
-      'Global community hubs',
-    ],
-  },
-  {
-    phase: 'Phase 4',
-    title: 'Evolution',
-    status: 'upcoming' as const,
-    items: [
-      'MIRUMI ecosystem expansion',
-      'Major collaborations',
-      'IRL events and meetups',
-      'Surprise announcements',
+    title: 'Legal',
+    links: [
+      { label: 'Privacy', href: '#' },
+      { label: 'Terms', href: '#' },
     ],
   },
 ]
 
 export const DISCLAIMER = {
-  token: 'MIRUMI is a memecoin and a cultural collectible. Nothing on this site constitutes financial advice. Always do your own research. Never invest more than you can afford to lose.',
-  footer: '2026 MIRUMI. A memecoin for collectors. Not financial advice. DYOR.',
+  footer: '© 2024 ProductName. All rights reserved.',
 }

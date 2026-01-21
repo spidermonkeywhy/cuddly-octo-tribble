@@ -1,16 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAFAF7;
+  --background: #FFFFFF;
   --foreground: #111111;
-  --accent: #FF69B4;
-  --accent-light: #FFB6C1;
-  --accent-dark: #FF1493;
+  --primary: #0070F3;
+  --primary-light: #3291FF;
+  --primary-dark: #0050B3;
+  --secondary: #00C853;
+  --secondary-light: #69F0AE;
+  --secondary-dark: #00A844;
+  --accent: #0070F3;
+  --accent-light: #3291FF;
+  --accent-dark: #0050B3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
@@ -71,6 +83,6 @@ body::before {
 
 /* Selection color */
 ::selection {
-  background-color: var(--accent-light);
-  color: var(--foreground);
+  background-color: var(--primary-light);
+  color: white;
 }

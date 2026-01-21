@@ -30,12 +30,12 @@ export function Button({
     'inline-flex items-center justify-center font-medium rounded-full transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed'
 
   const variants = {
-    primary: 'bg-[#111] text-white hover:bg-[#333] active:bg-[#000]',
+    primary: 'bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)] active:bg-[#003D99]',
     secondary:
       'bg-white text-[#111] border border-gray-200 hover:bg-gray-50 hover:border-gray-300 active:bg-gray-100',
     ghost: 'text-[#111] hover:bg-gray-100 active:bg-gray-200',
     accent:
-      'bg-[var(--accent)] text-white hover:bg-[var(--accent-dark)] active:bg-[#E0006F]',
+      'bg-[var(--secondary)] text-white hover:bg-[var(--secondary-dark)] active:bg-[#008F3D]',
   }
 
   const sizes = {

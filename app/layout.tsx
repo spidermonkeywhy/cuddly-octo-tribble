@@ -1,32 +1,25 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { Navbar } from '@/components/sections/Navbar'
+import { Footer } from '@/components/sections/Footer'
 
 export const metadata: Metadata = {
-  title: 'MIRUMI — The Labubu of 2026',
-  description: 'MIRUMI is a community-driven memecoin bringing collectible culture to Solana. Join the fluffiest community in crypto.',
-  keywords: ['MIRUMI', 'memecoin', 'Solana', 'crypto', 'collectible', 'Labubu', 'community'],
-  authors: [{ name: 'MIRUMI' }],
+  title: 'ProductName — The future of productivity',
+  description: 'Discover the revolutionary product that transforms how you work. Simple, powerful, and designed for modern life.',
+  keywords: ['productivity', 'software', 'business', 'tools', 'efficiency'],
+  authors: [{ name: 'ProductName' }],
   openGraph: {
-    title: 'MIRUMI — The Labubu of 2026',
-    description: 'MIRUMI is a community-driven memecoin bringing collectible culture to Solana. Join the fluffiest community in crypto.',
-    url: 'https://mirumi.io',
-    siteName: 'MIRUMI',
-    images: [
-      {
-        url: '/mirumi-pink.png',
-        width: 1200,
-        height: 630,
-        alt: 'MIRUMI - The fluffiest memecoin',
-      },
-    ],
+    title: 'ProductName — The future of productivity',
+    description: 'Discover the revolutionary product that transforms how you work. Simple, powerful, and designed for modern life.',
+    url: 'https://example.com',
+    siteName: 'ProductName',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MIRUMI — The Labubu of 2026',
-    description: 'MIRUMI is a community-driven memecoin bringing collectible culture to Solana.',
-    images: ['/mirumi-pink.png'],
+    title: 'ProductName — The future of productivity',
+    description: 'Discover the revolutionary product that transforms how you work.',
   },
   robots: {
     index: true,
@@ -37,7 +30,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#FAFAF7',
+  themeColor: '#FFFFFF',
 }
 
 export default function RootLayout({
@@ -48,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <Navbar />
+        <main className="pt-20">{children}</main>
+        <Footer />
       </body>
     </html>
   )
